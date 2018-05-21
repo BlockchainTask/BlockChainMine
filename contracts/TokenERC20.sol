@@ -4,8 +4,8 @@ interface tokenRecipient { function receiveApproval(address _from, uint256 _valu
 
 contract TokenERC20 {
     // Public variables of the token
-    string public name = "BitMineCoin";
-    string public symbol = "BMC";
+    string public name = "BitCoinMine";
+    string public symbol = "BCM";
     uint8 public decimals = 18;
     // 18 decimals is the strongly suggested default, avoid changing it
     uint256 public totalSupply = 21000000 * (10 ** uint256(decimals));

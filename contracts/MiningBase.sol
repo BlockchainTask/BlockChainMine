@@ -91,7 +91,7 @@ contract MiningBase is BitMineCoin{
     }
     function getUserInfo(uint32 idx) public view returns(address,uint32,uint32,uint32,uint256,uint256){
         UserInfo storage user = all_users_info[all_users_address[idx]];
-        return(all_users_address[idx],user.mines_count,user.sale_mines_count,user.mines_price_count,user.yestoday_earn_coin,user.all_earn_coin);
+        return(all_users_address[idx],user.mines_count,user.sale_mines_count,user.mines_price_count,user.yestoday_earn_coin,balanceOf[all_users_address[idx]]);
     }
     //the count of different types mining machines
     mapping (uint32 => uint32) public mine_type_count;
